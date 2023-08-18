@@ -5,12 +5,14 @@ const Wave = ({ color, bg }) => {
     <Box
       sx={{
         background: bg,
+        overflow: "hidden",
       }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 250"
-        heigh="100%"
+        height="100%"
+        style={{ minWidth: "1200px" }}
       >
         <path
           fill={color}

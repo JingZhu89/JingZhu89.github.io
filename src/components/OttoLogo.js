@@ -2,8 +2,12 @@ import { Box } from "@mui/system";
 import React from "react";
 const OttoLogo = () => {
   return (
-    <Box sx={{ height: "300px", display: "flex", zIndex: "1" }}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="162 162 251 252.84">
+    <Box sx={{ height: "300px", display: "flex" }}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="162 162 251 252.84"
+        style={{ zIndex: "1" }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"

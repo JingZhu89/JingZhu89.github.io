@@ -12,6 +12,7 @@ const Wave2 = ({ color, bg }) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         height="100%"
+        style={{ minWidth: "1200px" }}
       >
         <path
           fill={color}
