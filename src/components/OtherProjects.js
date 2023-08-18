@@ -1,53 +1,63 @@
 import React from "react";
-import { Container } from "@mui/system";
 import { Typography } from "@mui/material";
 import { projects1 } from "../data";
-import { Stack } from "@mui/system";
 import Project from "./Project";
-
+import { styled } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
 const OtherProjects = () => {
   return (
-    // <Container
-    //   maxWidth={false}
-    //   sx={{
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     alignItems: "center",
-    //     width: "100%",
-    //     background: "var(--ifm-color-secondary)",
-    //     marginTop: "-80px",
-    //     paddingBottom: "50px",
-    //   }}
-    // >
-    //   <Typography
-    //     variant="h4"
-    //     sx={{
-    //       color: "var(--ifm-color-fontColorWithBg)",
-    //       textAlign: "center",
-    //       marginTop: "60px",
-    //       marginBottom: "60px",
-    //     }}
-    //   >
-    //     <strong>Other Projects</strong>
-    //   </Typography>
-    //   <Stack
-    //     direction="row"
-    //     spacing={10}
-    //     maxWidth="auto"
-    //     alignItems="top"
-    //     justifyContent="top"
-    //     sx={{ marginBottom: "50px" }}
-    //   >
-    //     {projects1.map((project) => (
-    //       <Project
-    //         imgSrc={project.imgSrc}
-    //         title={project.title}
-    //         description={project.description}
-    //         tech={project.tech}
-    //       />
-    //     ))}
-    //   </Stack>
-    // </Container>
+    <Grid
+      container
+      sx={{
+        background: "var(--ifm-color-secondary)",
+        marginTop: "-40px",
+        paddingBottom: "60px",
+      }}
+    >
+      <Grid xs={12} item>
+        <Typography
+          variant="h4"
+          sx={{
+            color: "var(--ifm-color-fontColorWithBg)",
+            textAlign: "center",
+            marginBottom: "60px",
+          }}
+        >
+          <strong>Other Projects</strong>
+        </Typography>
+      </Grid>
+      <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
+        {projects1.map((project) => {
+          return (
+            <Grid
+              xs={12}
+              md={4}
+              item
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: "5px",
+              }}
+            >
+              <Project
+                imgSrc={project.imgSrc}
+                title={project.title}
+                description={project.description}
+                tech={project.tech}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </Grid>
   );
 };
 export default OtherProjects;

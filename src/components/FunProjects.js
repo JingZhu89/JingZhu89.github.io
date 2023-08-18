@@ -1,51 +1,55 @@
 import React from "react";
-import { Container } from "@mui/system";
 import { Typography } from "@mui/material";
 import { projects2 } from "../data";
 import Project from "./Project";
-import { Stack } from "@mui/system";
+import Grid from "@mui/material/Grid";
 
 export const FunProjects = () => {
   return (
-    <Container
-      maxWidth={false}
+    <Grid
+      container
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        width: "100%",
         background: "var(--ifm-color-tertiary)",
+        paddingTop: "50px",
+        paddingBottom: "60px",
       }}
     >
-      <Typography
-        variant="h4"
-        sx={{
-          color: "var(--ifm-color-fontColorWithBg)",
-          textAlign: "center",
-          marginTop: "60px",
-          marginBottom: "60px",
-        }}
-      >
-        <strong>Fun Projects</strong>
-      </Typography>
-      <Stack
-        direction="row"
-        spacing={10}
-        maxWidth="auto"
-        alignItems="top"
-        justifyContent="top"
-        sx={{ marginBottom: "50px" }}
-      >
-        {projects2.map((project) => (
-          <Project
-            imgSrc={project.imgSrc}
-            title={project.title}
-            description={project.description}
-            tech={project.tech}
-          />
-        ))}
-      </Stack>
-    </Container>
+      <Grid xs={12} item>
+        <Typography
+          variant="h4"
+          sx={{
+            color: "var(--ifm-color-fontColorWithBg)",
+            textAlign: "center",
+            marginBottom: "60px",
+          }}
+        >
+          <strong>Other Projects</strong>
+        </Typography>
+      </Grid>
+      <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
+        {projects2.map((project) => {
+          return (
+            <Grid
+              xs={12}
+              md={4}
+              item
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: "5px",
+              }}
+            >
+              <Project
+                imgSrc={project.imgSrc}
+                title={project.title}
+                description={project.description}
+                tech={project.tech}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </Grid>
   );
 };
 

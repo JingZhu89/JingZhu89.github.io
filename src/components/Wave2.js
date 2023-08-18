@@ -5,7 +5,7 @@ const Wave2 = ({ color, bg }) => {
     <Box
       sx={{
         background: bg,
-        marginBottom: "-10px",
+        overflow: "hidden",
       }}
     >
       <svg

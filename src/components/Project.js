@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
-
 import Divider from "@mui/material/Divider";
 
 const Project = ({ imgSrc, title, description, tech }) => {
@@ -15,6 +14,7 @@ const Project = ({ imgSrc, title, description, tech }) => {
         height: "600px",
         boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
         borderRadius: "30px",
+        margin: "0 auto",
       }}
     >
       <Box

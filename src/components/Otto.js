@@ -1,20 +1,11 @@
 import React from "react";
-import { Container, Box } from "@mui/system";
+import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import { Button } from "@mui/material";
 import Link from "@docusaurus/Link";
 import OttoLogo from "./OttoLogo";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
 const Otto = () => {
   return (
     <Grid
@@ -54,6 +45,7 @@ const Otto = () => {
                 padding: "40px",
                 justifyContent: "center",
                 boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
+                margin: "10px",
               }}
             >
               <Typography sx={{ color: "var(--ifm-color-fontColorWithBg)" }}>
@@ -65,7 +57,7 @@ const Otto = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid xs={12} md={5} item>
+          <Grid xs={12} md={5} item sx={{ margin: "10px" }}>
             <img
               src="img/workflow.png"
               style={{
