@@ -87,6 +87,7 @@ const Otto = () => {
                 background: "var(--ifm-color-primary)",
                 color: "var(--ifm-color-fontColorWithBg)",
                 borderRadius: "100px",
+                marginTop: "5px",
                 height: "150px",
                 width: "150px",
               }}
@@ -103,6 +104,7 @@ const Otto = () => {
                 background: "var(--ifm-color-primary)",
                 color: "var(--ifm-color-fontColorWithBg)",
                 borderRadius: "100px",
+                marginTop: "5px",
                 height: "150px",
                 width: "150px",
               }}

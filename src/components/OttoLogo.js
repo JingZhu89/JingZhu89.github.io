@@ -6,7 +6,7 @@ const OttoLogo = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="162 162 251 252.84"
-        style={{ zIndex: "1" }}
+        style={{ zIndex: "1", margin: "0 auto" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
