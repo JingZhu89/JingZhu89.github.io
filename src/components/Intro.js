@@ -118,101 +118,76 @@ const Intro = () => {
         </Grid>
       </Grid>
       <Grid xs={12} md={4} item>
-        <Box>
+        <Box sx={{ marginLeft: "10px", marginRight: "10px" }}>
           <Avatar
             src={jing.image}
             alt={jing.name}
             sx={{
-              width: 300,
-              height: 300,
-              margin: "0 auto",
+              width: "100%",
+              height: "auto",
             }}
           />
         </Box>
       </Grid>
       <Grid xs={12} md={7} item>
-        <Item />
+        <Box
+          sx={{
+            background: "var(--ifm-color-introBg)",
+            width: "auto",
+            marginLeft: "25px",
+            marginRight: "25px",
+            borderRadius: "30px",
+            display: "flex",
+            flexDirection: "column",
+            padding: "30px",
+            alignItem: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography sx={{ color: "var(--ifm-color-fontColor)" }} variant="h4">
+            <strong>Hello, I'm Jing Zhu</strong>
+          </Typography>
+          <Typography
+            sx={{
+              marginTop: "20px",
+              color: "var(--ifm-color-fontColor)",
+              fontSize: "20px",
+            }}
+          >
+            I'm a software engineer in St.Louis, Missouri. Recently, I built
+            Otto, an open-source, <strong>ETL workflow automation</strong> tool
+            that supports building, scheduling and execution
+            <strong> E</strong>xtract, <strong> T</strong>ransform and
+            <strong> L</strong>oad data piplines.
+          </Typography>
+          <Box sx={{ marginTop: "20px", alignItems: "left" }}>
+            <Button
+              variant="contained"
+              sx={{
+                background: "var(--ifm-color-primary)",
+                color: "var(--ifm-color-fontColorWithBg)",
+                marginRight: "20px",
+                marginBottom: "5px",
+              }}
+            >
+              <Link href="https://www.otto-etl.com/case_study/">
+                Otto Case Study
+              </Link>
+            </Button>
+            <Button
+              variant="contained"
+              sx={{
+                background: "var(--ifm-color-primary)",
+                color: "var(--ifm-color-fontColorWithBg)",
+                marginBottom: "5px",
+              }}
+            >
+              <Link href="">Resume</Link>
+            </Button>
+          </Box>
+        </Box>
       </Grid>
     </Grid>
-    // <Container
-    //   maxWidth={false}
-    //   sx={{
-    //     display: "flex",
-    //     flexDirection: "row",
-    //     alignItems: "top",
-    //     padding: "40px",
-    //     margin: "0",
-    //     width: "100%",
-    //     background: "var(--ifm-color-primary)",
-    //   }}
-    // >
-    //   <Stack
-    //     direction="column"
-    //     spacing={2}
-    //     maxWidth="auto"
-    //     alignItems="top"
-    //     justifyContent="top"
-    //     sx={{ marginTop: "40px", marginRight: "25px", marginLeft: "300px" }}
-    //   >
-
-    //   </Stack>
-
-    //   <Box
-    //     sx={{
-    //       background: "var(--ifm-color-introBg)",
-    //       marginLeft: "40px",
-    //       width: "600px",
-    //       height: "auto",
-    //       marginRight: "300px",
-    //       borderRadius: "30px",
-    //       display: "flex",
-    //       flexDirection: "column",
-    //       padding: "30px",
-    //       alignItem: "center",
-    //       justifyContent: "center",
-    //     }}
-    //   >
-    //     <Typography sx={{ color: "var(--ifm-color-fontColor)" }} variant="h4">
-    //       <strong>Hello, I'm Jing Zhu</strong>
-    //     </Typography>
-    //     <Typography
-    //       sx={{
-    //         marginTop: "20px",
-    //         color: "var(--ifm-color-fontColor)",
-    //         fontSize: "20px",
-    //       }}
-    //     >
-    //       I'm a software engineer in St.Louis, Missouri. Recently, I built Otto,
-    //       an open-source, <strong>ETL workflow automation</strong> tool that
-    //       supports building, scheduling and execution
-    //       <strong> E</strong>xtract, <strong> T</strong>ransform and
-    //       <strong> L</strong>oad data piplines.
-    //     </Typography>
-    //     <Box sx={{ marginTop: "20px" }}>
-    //       <Button
-    //         variant="contained"
-    //         sx={{
-    //           background: "var(--ifm-color-primary)",
-    //           color: "var(--ifm-color-fontColorWithBg)",
-    //         }}
-    //       >
-    //         <Link href="https://www.otto-etl.com/case_study/">
-    //           Otto Case Study
-    //         </Link>
-    //       </Button>
-    //       <Button
-    //         variant="contained"
-    //         sx={{
-    //           background: "var(--ifm-color-primary)",
-    //           color: "var(--ifm-color-fontColorWithBg)",
-    //           marginLeft: "20px",
-    //         }}
-    //       >
-    //         <Link href="">Resume</Link>
-    //       </Button>
-    //     </Box>
-    //   </Box>
-    // </Container>
   );
 };
 
