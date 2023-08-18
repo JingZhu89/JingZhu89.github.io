@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import Link from "@docusaurus/Link";
 import OttoLogo from "./OttoLogo";
 import Grid from "@mui/material/Grid";
+import { ottoDesc } from "../data";
 
 const Otto = () => {
   return (
@@ -48,12 +49,13 @@ const Otto = () => {
                 margin: "10px",
               }}
             >
-              <Typography sx={{ color: "var(--ifm-color-fontColorWithBg)" }}>
-                Place hoder place holder Place hoder place holder Place hoder
-                place holder Place hoder place holder Place hoder place holder
-                Place hoder place holder Place hoder place holder Place hoder
-                place holder Place hoder place holder Place hoder place holder
-                Place hoder place holder
+              <Typography
+                sx={{
+                  color: "var(--ifm-color-fontColorWithBg)",
+                  fontSize: "25px",
+                }}
+              >
+                {ottoDesc}
               </Typography>
             </Box>
           </Grid>

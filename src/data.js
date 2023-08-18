@@ -38,4 +38,13 @@ export const projects2 = [
     description: "A little endless platformer game",
     tech: "Ruby, Sinatra, Rake, PSQL",
   },
+  {
+    imgSrc: "",
+    title: "Lets Grail",
+    description: "A inventory tracking and allocation app for Diablo II",
+    tech: "Typescript, Express, MongoDB",
+  },
 ];
+
+export const ottoDesc =
+  "Otto orchestrates the gathering, transforming, and loading of data at scheduled intervals. Otto emphasizes ease of use for JavaScript developers and clear observability into their data processing in real-time. This includes errors or bottlenecks their workflow is running into, why they happened, and the details they need to fix them.";

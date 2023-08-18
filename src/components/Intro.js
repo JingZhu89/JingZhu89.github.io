@@ -16,6 +16,7 @@ const Intro = () => {
         background: "var(--ifm-color-primary)",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "-30px",
       }}
     >
       <Grid xs={12} md={1} item>
@@ -143,11 +144,13 @@ const Intro = () => {
               fontSize: "20px",
             }}
           >
-            I'm a software engineer in St.Louis, Missouri. Recently, I built
-            Otto, an open-source, <strong>ETL workflow automation</strong> tool
-            that supports building, scheduling and execution
-            <strong> E</strong>xtract, <strong> T</strong>ransform and
-            <strong> L</strong>oad data piplines.
+            I'm a software engineer in St.Louis, Missouri.
+            <br />
+            <br />
+            Recently, I built Otto, an open-source, <strong>ETL</strong> (
+            <strong> E</strong>
+            xtract, <strong> T</strong>ransform and
+            <strong> L</strong>oad) data pipeline workflow automation tool.
           </Typography>
           <Box sx={{ marginTop: "20px", alignItems: "left" }}>
             <Button

@@ -1,26 +1,21 @@
 import React from "react";
-import Stack from "@mui/material/Stack";
-import { Container } from "@mui/system";
 import { jing } from "../data";
+import Grid from "@mui/material/Grid";
+
 const Footer = () => {
   return (
-    <Container
-      maxWidth={false}
+    <Grid
+      container
       sx={{
-        paddingBottom: "80px",
-        display: "flex",
-        flexDirection: "column",
+        justifyContent: "center",
         alignItems: "center",
+        paddingBottom: "80px",
+        marginTop: "-80px",
         background: "var(--ifm-color-introBg)",
       }}
+      spacing={5}
     >
-      <Stack
-        direction="row"
-        spacing={5}
-        maxWidth="auto"
-        alignItems="center"
-        justifyContent="center"
-      >
+      <Grid item>
         <a href={jing.resume} target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +36,8 @@ const Footer = () => {
             <line x1="10" x2="8" y1="9" y2="9" />
           </svg>
         </a>
+      </Grid>
+      <Grid item>
         <a href={jing.github} target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +55,8 @@ const Footer = () => {
             <path d="M9 18c-4.51 2-5-2-7-2" />
           </svg>
         </a>
+      </Grid>
+      <Grid item>
         <a href={jing.linkedin} target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +75,8 @@ const Footer = () => {
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
+      </Grid>
+      <Grid item>
         <a href={`mailto:${jing.email}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,8 +94,8 @@ const Footer = () => {
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
         </a>
-      </Stack>
-    </Container>
+      </Grid>
+    </Grid>
   );
 };
 

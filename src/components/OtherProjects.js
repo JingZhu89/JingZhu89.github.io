@@ -39,7 +39,8 @@ const OtherProjects = () => {
           return (
             <Grid
               xs={12}
-              md={4}
+              md={12}
+              lg={4}
               item
               sx={{
                 justifyContent: "center",

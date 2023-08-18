@@ -10,8 +10,8 @@ const Project = ({ imgSrc, title, description, tech }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width: "400px",
-        height: "600px",
+        width: "450px",
+        height: "650px",
         boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
         borderRadius: "30px",
         margin: "0 auto",
@@ -55,6 +55,7 @@ const Project = ({ imgSrc, title, description, tech }) => {
           sx={{
             color: "var(--ifm-color-primary-darkest)",
             margin: "20px",
+            fontSize: "25px",
           }}
         >
           <strong>{title}</strong>
@@ -75,6 +76,7 @@ const Project = ({ imgSrc, title, description, tech }) => {
               color: "var(--ifm-color-primary-darkest)",
               marginLeft: "20px",
               marginRight: "20px",
+              fontSize: "20px",
             }}
           >
             {description}
@@ -86,6 +88,7 @@ const Project = ({ imgSrc, title, description, tech }) => {
               marginLeft: "20px",
               marginRight: "20px",
               marginTop: "auto",
+              fontSize: "18px",
             }}
           >
             {tech}
