@@ -1,41 +1,38 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import Intro from "../components/Intro";
+import Footer from "../components/Footer";
+import Otto from "../components/Otto";
+import FunProjects from "../components/FunProjects";
+import OtherProjects from "../components/OtherProjects";
+import Wave2 from "../components/Wave2";
+import Wave from "../components/Wave";
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      description="Description will go into a meta tag in <head />"
+    >
+      <Intro />
+
+      <Wave
+        color={"var(--ifm-color-primary)"}
+        bg={"var(--ifm-color-introBg)"}
+      />
+      <Otto />
+      <Wave2
+        color={"var(--ifm-color-secondary)"}
+        bg={"var(--ifm-color-introBg)"}
+      />
+      <OtherProjects />
+      <FunProjects />
+      <Wave
+        color={"var(--ifm-color-tertiary)"}
+        bg={"var(--ifm-color-introBg)"}
+      />
+      <Footer />
     </Layout>
   );
 }

@@ -6,25 +6,55 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #5d6ae0; /*#3c4bcb*/
+  --ifm-color-secondary: #3c93cb;
+  --ifm-color-tertiary: #cb743c;
+  --ifm-color-fontColor: #0b1565;
+  --ifm-color-fontColorWithBg: #ebedff;
+  --ifm-color-introBg: #ebedff;
+  --ifm-drop-shadow: rgb(65, 64, 64);
+  --ifm-color-primary-light: #6673e1;
+  --ifm-color-primary-lighter: #acb3e6;
+  --ifm-color-primary-lightest: #ebedff;
+  --ifm-color-primary-dark: #2433b2;
+  --ifm-color-primary-darker: #16238d;
+  --ifm-color-primary-darkest: #0b1565;
+  --ifm-color-primary-outline: #16238d;
+  --ifm-navbar-link-color: #0b1565;
+  --ifm-link-color: #f9f9f9;
+
   --ifm-code-font-size: 95%;
+  --ifm-background-color: linear-gradient(
+    180deg,
+    #ebedfe 0%,
+    rgba(238, 235, 254, 0) 64.58%
+  );
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-medium: 0px 0.5px 0.6px hsl(var(--shadow-color) / 0.11),
+    0px 1.7px 1.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    0px 4.2px 4.7px -1.7px hsl(var(--shadow-color) / 0.11),
+    -0.1px 10.2px 11.5px -2.5px hsl(var(--shadow-color) / 0.11);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  --ifm-color-primary: #9da6eb;
+  --ifm-color-secondary: #9dcdeb;
+  --ifm-color-tertiary: #ebbb9d;
+  --ifm-color-fontColor: #bbc1f1;
+  --ifm-color-fontColorWithBg: #16238d;
+  --ifm-color-introBg: rgb(0, 0, 0);
+  --ifm-drop-shadow: #030303;
+  --ifm-link-color: #16238d;
+  --ifm-color-primary-outline: #ebedff;
+  --ifm-color-primary-dark: #2433b2;
+  --ifm-color-primary-darker: #16238d;
+  --ifm-color-primary-darkest: #0b1565;
+  --ifm-color-primary-light: #6673e1;
+  --ifm-color-primary-lighter: #8a95ef;
+  --ifm-color-primary-lightest: #ebedff;
+  --ifm-navbar-link-color: #9da6eb;
+  --ifm-background-color: black;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
