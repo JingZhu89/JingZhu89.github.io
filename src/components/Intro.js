@@ -12,7 +12,7 @@ const Intro = () => {
     <Grid
       container
       sx={{
-        padding: "5% 18% 5% 18%",
+        padding: "5% 10% 5% 10%",
         background: "var(--ifm-color-primary)",
         justifyContent: "center",
         alignItems: "center",
@@ -108,13 +108,20 @@ const Intro = () => {
         </Grid>
       </Grid>
       <Grid xs={12} md={4} item>
-        <Box sx={{ marginLeft: "10px", marginRight: "10px" }}>
+        <Box
+          sx={{
+            marginLeft: "10px",
+            marginRight: "10px",
+            justifyContent: "center",
+          }}
+        >
           <Avatar
             src={jing.image}
             alt={jing.name}
             sx={{
               width: "100%",
               height: "auto",
+              // maxWidth: "350px",
             }}
           />
         </Box>
@@ -132,6 +139,7 @@ const Intro = () => {
             padding: "30px",
             alignItem: "center",
             justifyContent: "center",
+            maxWidth: "600px",
           }}
         >
           <Typography sx={{ color: "var(--ifm-color-fontColor)" }} variant="h4">

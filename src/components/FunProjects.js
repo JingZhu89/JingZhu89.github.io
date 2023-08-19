@@ -37,7 +37,7 @@ export const FunProjects = () => {
               sx={{
                 justifyContent: "center",
                 alignItems: "center",
-                marginBottom: "5px",
+                marginBottom: "10px",
               }}
             >
               <Project

@@ -37,7 +37,7 @@ const Otto = () => {
           }}
           spacing={4}
         >
-          <Grid xs={12} md={5} item>
+          <Grid md={12} lg={5} item>
             <Box
               sx={{
                 background: "var(--ifm-color-primary)",
@@ -47,6 +47,7 @@ const Otto = () => {
                 justifyContent: "center",
                 boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
                 margin: "10px",
+                minHeight: "371.17px",
               }}
             >
               <Typography
@@ -59,11 +60,12 @@ const Otto = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid xs={12} md={5} item sx={{ margin: "10px" }}>
+          <Grid md={12} lg={5} item sx={{ margin: "10px" }}>
             <img
               src="img/workflow.png"
               style={{
                 boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
+                maxHeight: "371.17px",
               }}
             />
           </Grid>
