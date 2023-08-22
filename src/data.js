@@ -1,6 +1,6 @@
 export const jing = {
   name: "Jing Zhu",
-  resume: "file/Jing_Zhu_Resume.pdf",
+  resume: "./img/Jing_Zhu_Resume.pdf",
   image: "img/Jing.jpeg",
   github: "https://github.com/JingZhu89",
   linkedin: "https://www.linkedin.com/in/jingzhumsscm/",
@@ -9,7 +9,7 @@ export const jing = {
 
 export const projects1 = [
   {
-    imgSrc: "img/requestBin.png",
+    imgSrc: "img/questbin.png",
     title: "MessageBin",
     description:
       "A web-based tool that gathers and displays inbound webhook data in real-time.",

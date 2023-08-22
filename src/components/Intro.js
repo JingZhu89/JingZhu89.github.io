@@ -182,7 +182,9 @@ const Intro = () => {
                 marginBottom: "5px",
               }}
             >
-              <Link href="">Resume</Link>
+              <Link href={jing.resume} target="_blank">
+                Resume
+              </Link>
             </Button>
           </Box>
         </Box>
