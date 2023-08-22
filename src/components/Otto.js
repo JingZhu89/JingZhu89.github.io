@@ -62,7 +62,7 @@ const Otto = () => {
           </Grid>
           <Grid md={12} lg={5} item sx={{ margin: "10px" }}>
             <img
-              src="img/workflow.png"
+              src="img/homepage_workflow.gif"
               style={{
                 boxShadow: "0px 5px 10px var(--ifm-drop-shadow)",
                 maxHeight: "371.17px",

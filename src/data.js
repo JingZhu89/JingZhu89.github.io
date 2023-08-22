@@ -1,6 +1,6 @@
 export const jing = {
   name: "Jing Zhu",
-  resume: "",
+  resume: "file/Jing_Zhu_Resume.pdf",
   image: "img/Jing.jpeg",
   github: "https://github.com/JingZhu89",
   linkedin: "https://www.linkedin.com/in/jingzhumsscm/",
@@ -12,37 +12,39 @@ export const projects1 = [
     imgSrc: "img/requestBin.png",
     title: "MessageBin",
     description:
-      "A web-based tool that receives and displays webhook data in realtime.",
+      "A web-based tool that gathers and displays inbound webhook data in real-time.",
     tech: "Javascript, Webhook, WebSocket, CICD, MUI, Nginx, PSQL",
   },
   {
     imgSrc: "img/apartment.png",
     title: "Building Management App",
     description:
-      "A building management app that tracks price, occupancy for apartment buildings.",
+      "A building management app that tracks price & occupancy for apartment buildings.",
     tech: "Ruby, Sinatra, Rake, PSQL",
   },
   {
     imgSrc: "img/shoppingcart.png",
     title: "Shopping Cart",
     description:
-      "An app that allows users to add, edit, checkout products in their shopping cart.",
-    tech: "Javascript, Express, MongoDB",
+      "A shopping app that allows users to add, edit & checkout products in their shopping cart.",
+    tech: "Javascript, Express, React, MongoDB",
   },
 ];
 
 export const projects2 = [
   {
-    imgSrc: "",
-    title: "Shiba Runs",
-    description: "A little endless platformer game",
-    tech: "Ruby, Sinatra, Rake, PSQL",
+    imgSrc: "img/chewchew_runs.png",
+    title: "Chew Chew Runs",
+    description:
+      "An endless runner game that features continuouse procedural generation of levels, obstacles, perks and powerups",
+    tech: "C#, Unity Engine",
   },
   {
-    imgSrc: "",
-    title: "Lets Grail",
-    description: "A inventory tracking and allocation app for Diablo II",
-    tech: "Typescript, Express, MongoDB",
+    imgSrc: "img/grind.png",
+    title: "Let's Grind",
+    description:
+      "An item management and tracking system for Diablo II Resurrected",
+    tech: "Typescript, Express, React, MongoDB",
   },
 ];
 

@@ -23,7 +23,7 @@ export const FunProjects = () => {
             marginBottom: "60px",
           }}
         >
-          <strong>Other Projects</strong>
+          <strong>Fun Projects</strong>
         </Typography>
       </Grid>
       <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
