@@ -119,7 +119,7 @@ const Intro = () => {
             src={jing.image}
             alt={jing.name}
             sx={{
-              width: "100%",
+              width: "85%",
               height: "auto",
               // maxWidth: "350px",
             }}
