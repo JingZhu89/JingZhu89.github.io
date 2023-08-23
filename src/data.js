@@ -36,7 +36,7 @@ export const projects2 = [
     imgSrc: "img/chewchew_runs.png",
     title: "Chew Chew Runs",
     description:
-      "An endless runner game that features continuouse procedural generation of levels, obstacles, perks and powerups",
+      "An endless runner game that features continuous procedural generation of levels, obstacles, perks and powerups",
     tech: "C#, Unity Engine",
   },
   {
