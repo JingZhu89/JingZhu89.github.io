@@ -110,9 +110,11 @@ const Intro = () => {
       <Grid xs={12} md={4} item>
         <Box
           sx={{
+            display: "flex",
             marginLeft: "10px",
             marginRight: "10px",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Avatar
@@ -139,7 +141,7 @@ const Intro = () => {
             padding: "30px",
             alignItem: "center",
             justifyContent: "center",
-            maxWidth: "600px",
+            maxWidth: "700px",
           }}
         >
           <Typography sx={{ color: "var(--ifm-color-fontColor)" }} variant="h4">
@@ -152,7 +154,10 @@ const Intro = () => {
               fontSize: "20px",
             }}
           >
-            I'm a software engineer in St.Louis, Missouri.
+            I'm a full-stack software engineer with a passion for learning new
+            things and solving problems. I have experience building applications
+            and games using JavaScript, Ruby, TypeScript and C# and I'm always
+            curious about new technologies.
             <br />
             <br />
             Recently, I built Otto, an open-source, <strong>ETL</strong> (

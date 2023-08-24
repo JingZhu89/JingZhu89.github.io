@@ -9,11 +9,11 @@ export const jing = {
 
 export const projects1 = [
   {
-    imgSrc: "img/questbin.png",
+    imgSrc: "img/messageBin.png",
     title: "MessageBin",
     description:
       "A web-based tool that gathers and displays inbound webhook data in real-time.",
-    tech: "Javascript, Webhook, WebSocket, CICD, MUI, Nginx, PSQL",
+    tech: "JavaScript, Webhook, WebSocket, CICD, MUI, Nginx, PSQL",
   },
   {
     imgSrc: "img/apartment.png",
@@ -24,10 +24,10 @@ export const projects1 = [
   },
   {
     imgSrc: "img/shoppingcart.png",
-    title: "Shopping Cart",
+    title: "e.Bucket",
     description:
-      "A shopping app that allows users to add, edit & checkout products in their shopping cart.",
-    tech: "Javascript, Express, React, MongoDB",
+      "An e-commerce that allows users to add, edit & check out products in their shopping carts.",
+    tech: "JavaScript, Express, React, MongoDB",
   },
 ];
 
@@ -44,7 +44,7 @@ export const projects2 = [
     title: "Let's Grind",
     description:
       "An item management and tracking system for Diablo II Resurrected",
-    tech: "Typescript, Express, React, MongoDB",
+    tech: "TypeScript, Express, React, MongoDB",
   },
 ];
 
