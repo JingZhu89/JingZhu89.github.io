@@ -1,6 +1,6 @@
 export const jing = {
   name: "Jing Zhu",
-  resume: "./img/Jing_Zhu_Resume.pdf",
+  resume: "./img/Jing_Zhu_Resume_v2.pdf",
   image: "img/Jing.jpeg",
   github: "https://github.com/JingZhu89",
   linkedin: "https://www.linkedin.com/in/jingzhumsscm/",
